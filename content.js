@@ -81,9 +81,9 @@ window.siteContent = {
     {
       id: 'asee26-futures', short: "ASEE '26", year: 2026,
       title: 'Futures as Pedagogy: Africanfuturism, Ungrading, and Critical AI Literacy for Developing Entrepreneurial Mindset in Engineering Science',
-      authors: ['Nadia Kellam', 'Wanpeng Xu', 'C. R. Palacio', 'M. Suleman', 'A. L. Castillo'],
+      authors: ['Nadia Kellam', 'Wanpeng Xu', 'Cinthia Rojas Palacio', 'Mariya Suleman', 'Andrea Castillo'],
       venue: '2026 ASEE Annual Conference & Exposition',
-      links: {}
+      links: { Paper: 'https://doi.org/10.18260/1-2--59678' }
     },
     {
       id: 'emnlp26-rubrics', short: "EMNLP '26", year: 2026,
@@ -95,7 +95,7 @@ window.siteContent = {
     {
       id: 'acl26-tools', short: "ACL '26", year: 2026,
       title: 'Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models',
-      authors: ['Zheng Luo', 'T. Pranav Kutralingam', 'Ogochukwu N. Okoani', 'Wanpeng Xu', 'Hua Wei', 'Xiyang Hu'],
+      authors: ['Zheng Luo', 'T. Pranav Kutralingam', 'Ogochukwu Okoani', 'Wanpeng Xu', 'Hua Wei', 'Xiyang Hu'],
       venue: 'ACL 2026 (Main Conference, Long Paper)',
       links: { Paper: 'https://aclanthology.org/2026.acl-long.2039/', arXiv: 'https://arxiv.org/abs/2601.05366' }
     },
