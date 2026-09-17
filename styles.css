@@ -82,7 +82,7 @@ h1 { font-size: 26px; font-weight: 500; color: var(--accent); }
 em { font-style: italic; }
 
 /* ── Teaching statement & descriptions ──────────────────────────────────── */
-.statement { margin: 0 0 16px; text-align: justify; }
+.statement { margin: 6px 0 0; text-align: justify; }
 .statement p + p { margin-top: 8px; }
 .statement-quote { font-size: 20px; font-weight: 500; color: var(--accent); text-align: left; margin-bottom: 6px; }
 .desc { font-size: 14px; color: var(--muted); line-height: 1.45; margin-top: 2px; text-align: justify; }
