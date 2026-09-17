@@ -1,0 +1,109 @@
+/* ── Tokens ─────────────────────────────────────────────────────────────── */
+:root {
+  --ink: #222;
+  --muted: #666;
+  --accent: #8c263d;
+  --accent-soft: #f3edef;
+  --line: #e6e6e6;
+  --bg: #fff;
+  --measure: 1110px;   /* same container width as Bootstrap's .container at ≥1200px */
+  --gutter: 30px;
+  --sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --mono: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 56px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+p { margin: 0; }
+.skip { position: fixed; top: -60px; left: 12px; background: #fff; padding: 8px; z-index: 5; }
+.skip:focus { top: 8px; }
+h1, h2 { margin: 0; line-height: 1.25; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+
+/* ── Navigation ─────────────────────────────────────────────────────────── */
+.nav { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,.95); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.nav-inner { max-width: var(--measure); margin: 0 auto; padding: 10px var(--gutter); display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; font-size: 14px; }
+.nav a { color: var(--muted); }
+.nav a:hover { color: var(--accent); text-decoration: none; }
+.nav .wordmark { color: var(--ink); font-weight: 600; font-size: 15px; margin-right: auto; }
+
+/* ── Column: everything aligns to this box ──────────────────────────────── */
+main { max-width: var(--measure); margin: 0 auto; padding: 32px var(--gutter) 24px; }
+footer { max-width: var(--measure); margin: 0 auto; padding: 24px var(--gutter) 32px; text-align: center; font: 11.5px var(--mono); color: var(--muted); }
+h2 { font-size: 28px; font-weight: 500; color: var(--accent); margin: 30px 0 10px; }
+.credentials h2 { margin-top: 0; }
+
+/* ── Hero: portrait on the left, name and bio on the right ──────────────── */
+.hero { display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: stretch; }
+.profile { text-align: left; }
+.portrait { width: 220px; align-self: stretch; min-height: 220px; border-radius: 4px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.portrait-initials { font: 60px Georgia, serif; color: #a86b7b; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+h1 { font-size: 26px; font-weight: 500; color: var(--accent); }
+.position { margin-top: 2px; }
+.email { display: inline-block; font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.profile-links { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; font-size: 15px; }
+
+/* ── Bio ────────────────────────────────────────────────────────────────── */
+.bio { margin-top: 14px; text-align: justify; }
+.bio p + p { margin-top: 8px; }
+
+/* ── Education / Experience ─────────────────────────────────────────────── */
+.credentials { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 60px; margin-top: 28px; }
+.credentials.single { grid-template-columns: 1fr; }
+.credential { margin-bottom: 8px; }
+.credential-head { display: flex; justify-content: space-between; gap: 10px; }
+.credential-main { font-weight: 500; }
+.credential-years { color: var(--accent); white-space: nowrap; }
+.credential-detail { font-size: 14px; color: var(--muted); line-height: 1.4; }
+
+/* ── Research ───────────────────────────────────────────────────────────── */
+.theme { margin-bottom: 10px; text-align: justify; }
+.theme strong { font-weight: 600; }
+
+/* ── Entries: publications, teaching, talks ─────────────────────────────── */
+.entry { margin-bottom: 12px; }
+.entry:target { background: var(--accent-soft); box-shadow: 0 0 0 8px var(--accent-soft); }
+.title { font-size: 16px; }
+.venue { color: var(--muted); white-space: nowrap; }
+.authors { line-height: 1.5; }
+.course-number { color: var(--ink); font-size: 14px; }
+.authors .me { text-decoration: underline; text-underline-offset: 3px; color: var(--ink); }
+.note { display: inline-block; font-family: var(--mono); font-size: 13px; background: #fff0c2; padding: 0 3px; margin-top: 2px; }
+.links { display: flex; flex-wrap: wrap; gap: 2px 10px; font-family: var(--mono); font-size: 13px; margin-top: 1px; }
+.links a { text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+em { font-style: italic; }
+
+/* ── Teaching statement & descriptions ──────────────────────────────────── */
+.statement { margin: 0 0 16px; text-align: justify; }
+.statement p + p { margin-top: 8px; }
+.statement-quote { font-size: 20px; font-weight: 500; color: var(--accent); text-align: left; margin-bottom: 6px; }
+.desc { font-size: 14px; color: var(--muted); line-height: 1.45; margin-top: 2px; text-align: justify; }
+
+/* ── Awards ─────────────────────────────────────────────────────────────── */
+.award { margin-bottom: 3px; }
+.award .year { margin-right: 6px; }
+
+/* ── CV ─────────────────────────────────────────────────────────────────── */
+.cv a { display: inline-block; border: 1px solid var(--accent); padding: 5px 12px; font-size: 14px; }
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  :root { --gutter: 20px; }
+  main { padding-top: 28px; }
+  .credentials { grid-template-columns: 1fr; gap: 12px; }
+  .bio, .theme, .statement, .desc { text-align: left; }
+  .hero { grid-template-columns: 1fr; gap: 16px; }
+  .portrait { width: 160px; height: 200px; min-height: 0; margin: 0 auto; }
+  .profile { text-align: center; }
+  .profile-links { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print { .links, footer { display: none; } main { padding: 0; } }
