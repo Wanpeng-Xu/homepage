@@ -129,8 +129,15 @@ window.siteContent = {
     { term: 'Fall 2025', number: 'FSE 100', title: 'Introduction to Engineering', role: 'Instructor' }
   ],
 
-  // date: 'YYYY', 'YYYY-MM', or 'YYYY-MM-DD'. `description` is optional.
+  // Shown in this order (not sorted). date: 'YYYY', 'YYYY-MM', or 'YYYY-MM-DD'. `description` is optional.
   talks: [
+    {
+      date: '2026-03',
+      title: 'Instructional Agents: Reducing Teaching Faculty Workload through Multi-Agent Instructional Design',
+      event: 'EACL 2026, Rabat, Morocco',
+      type: 'Oral presentation',
+      links: { Recording: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design' }
+    },
     {
       date: '2026-06-24',
       title: 'Perspectives from Individuals with ADHD in Engineering: A Journey Across Student, Faculty & Industry',
@@ -138,13 +145,6 @@ window.siteContent = {
       type: 'Panel organizer',
       description: 'Students, faculty, and industry professionals share their experiences of living and working with ADHD in engineering: late diagnosis, challenges and strengths, and how to build more inclusive classrooms and workplaces.',
       links: {}
-    },
-    {
-      date: '2026-03',
-      title: 'Instructional Agents: Reducing Teaching Faculty Workload through Multi-Agent Instructional Design',
-      event: 'EACL 2026, Rabat, Morocco',
-      type: 'Oral presentation',
-      links: { Recording: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design' }
     },
     {
       date: '2025-06-24',

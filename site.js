@@ -131,7 +131,7 @@
     const [y, m] = String(date).split('-');
     return m ? `${new Date(Number(y), Number(m) - 1).toLocaleString('en', { month: 'long' })} ${y}` : y;
   };
-  const talks = [...(data.talks || [])].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const talks = data.talks || [];   // list order is the display order
   if (talks.length) for (const t of talks) {
     const row = el('div', null, 'entry');
     row.append(el('p', t.title, 'title'));
