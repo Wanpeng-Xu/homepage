@@ -81,7 +81,7 @@ window.siteContent = {
     {
       id: 'asee26-futures', short: "ASEE '26", year: 2026,
       title: 'Futures as Pedagogy: Africanfuturism, Ungrading, and Critical AI Literacy for Developing Entrepreneurial Mindset in Engineering Science',
-      authors: ['Nadia Kellam', 'Wanpeng Xu', 'Cinthia Palacio', 'Mariya Suleman', 'Andrea Castillo'],
+      authors: ['Nadia Kellam', 'Wanpeng Xu', 'Cinthia Rojas Palacio', 'Mariya Suleman', 'Andrea Castillo'],
       venue: '2026 ASEE Annual Conference & Exposition',
       links: { Paper: 'https://doi.org/10.18260/1-2--59678' }
     },
