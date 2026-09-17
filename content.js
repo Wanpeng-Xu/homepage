@@ -81,7 +81,7 @@ window.siteContent = {
     {
       id: 'asee26-futures', short: "ASEE '26", year: 2026,
       title: 'Futures as Pedagogy: Africanfuturism, Ungrading, and Critical AI Literacy for Developing Entrepreneurial Mindset in Engineering Science',
-      authors: ['Nadia N. Kellam', 'Wanpeng Xu', 'C. R. Palacio', 'M. Suleman', 'A. L. Castillo'],
+      authors: ['Nadia Kellam', 'Wanpeng Xu', 'C. R. Palacio', 'M. Suleman', 'A. L. Castillo'],
       venue: '2026 ASEE Annual Conference & Exposition',
       links: {}
     },
@@ -109,7 +109,7 @@ window.siteContent = {
     {
       id: 'asee25-mental-health', short: "ASEE '25", year: 2025,
       title: 'WIP: Exploring the Mental Health Challenges of Asian LGBTQIA+ Students in Engineering',
-      authors: ['Wanpeng Xu', 'Nadia N. Kellam'],
+      authors: ['Wanpeng Xu', 'Nadia Kellam'],
       venue: '2025 ASEE Annual Conference & Exposition',
       links: { Paper: 'https://doi.org/10.18260/1-2--57413' }
     }
