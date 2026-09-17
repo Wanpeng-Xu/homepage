@@ -136,7 +136,7 @@ window.siteContent = {
       title: 'Instructional Agents: Reducing Teaching Faculty Workload through Multi-Agent Instructional Design',
       event: 'EACL 2026, Rabat, Morocco',
       type: 'Oral presentation',
-      links: { Recording: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design' }
+      links: { Video: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design' }
     },
     {
       date: '2026-06-24',
