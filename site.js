@@ -51,7 +51,15 @@
     if (sub) { const detail = el('p', sub, 'credential-detail'); if (note) detail.append(` (${note})`); item.append(detail); }
     return item;
   };
-  if (data.education?.length) for (const e of data.education) $('#education-list').append(credential(e.institution, e.degree, e.years, e.note));
+  if (data.education?.length) for (const e of data.education) {
+    const item = credential(e.institution, e.degree, e.years, e.note);
+    if (e.advisor?.name) {
+      const line = el('p', 'Advisor: ', 'credential-detail');
+      line.append(safeURL(e.advisor.url) ? link(e.advisor.name, e.advisor.url) : e.advisor.name);
+      item.append(line);
+    }
+    $('#education-list').append(item);
+  }
   else $('#education-block').remove();
   if (data.experiences?.length) for (const x of data.experiences) {
     const item = credential(x.organization ? `${x.title} @ ${x.organization}` : x.title, '', x.years);
