@@ -38,7 +38,7 @@
   const [role, ...affiliation] = data.position || [];
   $('#position').append(role || '', affiliation.length ? ', ' : '', el('span', affiliation.join(', '), 'muted'));
   const email = $('#email');
-  if (data.email) { email.href = `mailto:${data.email}`; email.textContent = data.email.replace('@', ' [at] ').replace(/\./g, ' [dot] '); } else email.remove();
+  if (data.email) email.textContent = data.email.replace('@', ' [at] ').replace(/\./g, ' [dot] '); else email.remove();
   if (safeURL(data.photo)) {
     const img = el('img'); img.src = data.photo; img.alt = `Portrait of ${data.name}`;
     img.addEventListener('load', () => $('#portrait').replaceChildren(img));
@@ -58,12 +58,7 @@
   };
   if (data.education?.length) for (const e of data.education) {
     const item = credential(e.institution, e.degree, e.years, e.note);
-    if (safeURL(e.degreeUrl)) item.querySelector('.credential-detail').replaceChildren(link(e.degree, e.degreeUrl, 'quiet'));
-    if (e.advisor?.name) {
-      const line = el('p', 'Advisor: ', 'credential-detail');
-      line.append(safeURL(e.advisor.url) ? link(e.advisor.name, e.advisor.url) : e.advisor.name);
-      item.append(line);
-    }
+    if (e.advisor?.name) item.append(el('p', `Advisor: ${e.advisor.name}`, 'credential-detail'));
     $('#education-list').append(item);
   }
   else $('#education-block').remove();

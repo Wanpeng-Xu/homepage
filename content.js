@@ -36,8 +36,7 @@ window.siteContent = {
   ],
 
   education: [
-    { institution: 'Arizona State University', degree: 'PhD in Engineering Education Systems and Design', degreeUrl: 'https://poly.engineering.asu.edu/degrees/engineering-education-systems-and-design/', years: 'Expected Fall 2027',
-      advisor: { name: 'Nadia Kellam', url: 'https://search.asu.edu/profile/2432994' } },
+    { institution: 'Arizona State University', degree: 'PhD in Engineering Education Systems and Design', years: 'Expected Fall 2027', advisor: { name: 'Nadia Kellam' } },
     { institution: 'Fordham University', degree: 'MS in Business Analytics', years: '2023' },
     { institution: 'Wenzhou University', degree: 'BA in Advertising', years: '2016' }
   ],
