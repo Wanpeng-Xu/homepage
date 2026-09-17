@@ -28,7 +28,6 @@
 
   // ── Identity ────────────────────────────────────────────────────────────
   document.querySelectorAll('[data-name]').forEach(n => n.textContent = data.name);
-  document.title = data.name;
   $('.portrait-initials').textContent = data.initials;
   $('#year').textContent = new Date().getFullYear();
   const [role, ...affiliation] = data.position || [];
