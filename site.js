@@ -18,9 +18,14 @@
     if (/^https?:/.test(url) && new URL(url).origin !== location.origin) { a.target = '_blank'; a.rel = 'noopener'; }
     return a;
   };
+  const LINK_ORDER = ['paper', 'arxiv', 'code', 'project', 'video', 'slides'];
   const linkRow = (links) => {
     const row = el('p', null, 'links');
-    Object.entries(links || {}).forEach(([label, url]) => { if (safeURL(url)) row.append(link(label.toLowerCase(), url)); });
+    Object.entries(links || {})
+      .map(([label, url]) => [label.toLowerCase(), url])
+      .filter(([, url]) => safeURL(url))
+      .sort(([a], [b]) => (LINK_ORDER.indexOf(a) + 1 || 99) - (LINK_ORDER.indexOf(b) + 1 || 99))
+      .forEach(([label, url]) => row.append(link(label, url)));
     return row.childElementCount ? row : null;
   };
   const hideSection = (id) => { $(`#${id}`)?.remove(); document.querySelectorAll(`.nav a[href="#${id}"]`).forEach(a => a.remove()); };

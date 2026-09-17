@@ -8,6 +8,7 @@
 //     Put the papers you want highlighted first within their year.
 //   • Research themes reference publications by their `id`.
 //   • `short` is the compact venue tag shown next to a publication title.
+//   • Link labels: Paper (published version), arXiv, Code, Project, Video, Slides — always shown in that order.
 // ─────────────────────────────────────────────────────────────────────────────
 window.siteContent = {
   name: 'Wanpeng Xu',
@@ -74,7 +75,7 @@ window.siteContent = {
         arXiv: 'https://arxiv.org/abs/2508.19611',
         Code: 'https://github.com/DaRL-GenAI/instructional_agents',
         Project: 'https://darl-genai.github.io/instructional_agents_homepage/',
-        Talk: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design'
+        Video: 'https://underline.io/lecture/147149-instructional-agents-reducing-teaching-faculty-workload-through-multi-agent-instructional-design'
       }
     },
     {
@@ -103,14 +104,14 @@ window.siteContent = {
       title: 'From Course Concept to Lecture Video: An AI-Powered System for Automated MOOC Development',
       authors: ['Jacob Igo', 'Huaiyuan Yao', 'Wanpeng Xu', 'Nadia Kellam', 'Hua Wei'],
       venue: 'Proceedings of the Learning Engineering Research Network Convening (LERN 2026)',
-      links: { DOI: 'https://doi.org/10.59668/2551.25409', PDF: 'https://edtechbooks.s3.us-west-2.amazonaws.com/pdfs/2551/25409.pdf' }
+      links: { Paper: 'https://doi.org/10.59668/2551.25409' }
     },
     {
       id: 'asee25-mental-health', short: "ASEE '25", year: 2025,
       title: 'WIP: Exploring the Mental Health Challenges of Asian LGBTQIA+ Students in Engineering',
       authors: ['Wanpeng Xu', 'Nadia N. Kellam'],
       venue: '2025 ASEE Annual Conference & Exposition',
-      links: { Paper: 'https://peer.asee.org/wip-exploring-the-mental-health-challenges-of-asian-lgbtqia-students-in-engineering', DOI: 'https://doi.org/10.18260/1-2--57413' }
+      links: { Paper: 'https://doi.org/10.18260/1-2--57413' }
     }
   ],
 
