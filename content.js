@@ -44,7 +44,7 @@ window.siteContent = {
   // { organization, title, years, description } — shown as "title @ organization"; organization may be empty
   experiences: [
     { organization: 'ASU', title: 'Research Administrator', years: '2024 – 2025',
-      description: 'Supported 30+ principal investigators on 100+ research proposals to 10+ funding agencies and sponsors.' },
+      description: 'Managed 100+ research proposals for 30+ principal investigators, submitted to 10+ funding agencies and sponsors.' },
     { organization: 'New York & Shanghai', title: 'Project Manager', years: '2017 – 2022',
       description: 'Five years leading cross-functional programs and teams, from planning and budgeting to delivery and stakeholder communication.' }
   ],
