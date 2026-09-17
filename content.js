@@ -57,7 +57,7 @@ window.siteContent = {
     },
     {
       title: 'Identity & inclusion in engineering education',
-      description: 'Qualitative studies of Asian, LGBTQIA+, and neurodivergent engineering students, and pedagogies that widen who gets to belong in engineering.',
+      description: 'Qualitative studies of Asian, queer, and neurodivergent engineering students, and pedagogies that widen who gets to belong in engineering.',
       papers: ['asee25-mental-health', 'asee26-futures']
     }
   ],
