@@ -28,6 +28,15 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 Then open http://127.0.0.1:4173.
 
-## Publish on GitHub Pages
+## Publish
 
-Push the contents of this directory to the root of a GitHub Pages repository and enable Pages from that branch. `.nojekyll` makes GitHub serve the files as-is. Add a `CNAME` file to use a custom domain.
+Live at **https://wanpengxu.com** (GitHub Pages, repository `Wanpeng-Xu/homepage`, branch `main`).
+The `CNAME` file holds the custom domain; DNS is managed at Namecheap.
+
+To publish a change:
+
+```bash
+git add -A && git commit -m "Update content" && git push
+```
+
+The site updates within a minute or two.
