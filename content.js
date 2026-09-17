@@ -29,13 +29,13 @@ window.siteContent = {
 
   // Short paragraphs. <strong> and <a> tags are allowed here.
   bio: [
-    'Hello! I am a PhD student in Engineering Education Systems and Design at Arizona State University, advised by <a href="https://search.asu.edu/profile/2432994">Dr. Nadia Kellam</a>, with expected graduation in Fall 2027.',
+    'Hello! I am a PhD student in <a href="https://poly.engineering.asu.edu/degrees/engineering-education-systems-and-design/">Engineering Education Systems and Design</a> at Arizona State University, advised by <a href="https://search.asu.edu/profile/2432994">Dr. Nadia Kellam</a>, with expected graduation in Fall 2027.',
     'My research spans <strong>AI for education</strong> and <strong>identity & inclusion in engineering</strong>. I study theory-grounded AI systems that support teaching, learning, and instructional design, and I investigate the experiences of Asian, queer, neurodivergent, and other marginalized engineering students.',
     'Before my PhD, I worked as a research administrator at Arizona State University supporting faculty grant proposals, and as a project manager in New York and Shanghai.'
   ],
 
   education: [
-    { institution: 'Arizona State University', degree: 'PhD in Engineering Education Systems and Design', years: 'Expected Fall 2027',
+    { institution: 'Arizona State University', degree: 'PhD in Engineering Education Systems and Design', degreeUrl: 'https://poly.engineering.asu.edu/degrees/engineering-education-systems-and-design/', years: 'Expected Fall 2027',
       advisor: { name: 'Nadia Kellam', url: 'https://search.asu.edu/profile/2432994' } },
     { institution: 'Fordham University', degree: 'MS in Business Analytics', years: '2023' },
     { institution: 'Wenzhou University', degree: 'BA in Advertising', years: '2016' }

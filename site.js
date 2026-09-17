@@ -53,6 +53,7 @@
   };
   if (data.education?.length) for (const e of data.education) {
     const item = credential(e.institution, e.degree, e.years, e.note);
+    if (safeURL(e.degreeUrl)) item.querySelector('.credential-detail').replaceChildren(link(e.degree, e.degreeUrl, 'quiet'));
     if (e.advisor?.name) {
       const line = el('p', 'Advisor: ', 'credential-detail');
       line.append(safeURL(e.advisor.url) ? link(e.advisor.name, e.advisor.url) : e.advisor.name);
