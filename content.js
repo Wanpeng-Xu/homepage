@@ -169,7 +169,7 @@ window.siteContent = {
     { year: 2026, title: 'Graduate Student Government (GSG) Travel Grant', organization: 'Arizona State University' },
     { year: 2026, title: 'Fulton Schools Experiential Learning Grant', organization: 'Arizona State University' },
     { year: 2026, title: 'Graduate College Travel Award', organization: 'Arizona State University' },
-    { year: 2026, title: 'TPS PhD Travel Grant', organization: 'Arizona State University' },
+    { year: 2026, title: 'The Polytechnic School PhD Travel Grant', organization: 'Arizona State University' },
     { year: 2025, title: 'Graduate Student Government (GSG) Travel Grant', organization: 'Arizona State University' },
     { year: 2025, title: 'Fulton Schools Experiential Learning Grant', organization: 'Arizona State University' },
     { year: 2025, title: 'Graduate College Travel Award', organization: 'Arizona State University' },
