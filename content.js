@@ -164,6 +164,7 @@ window.siteContent = {
   ],
 
   awards: [
+    { year: 2026, title: 'Principled Engineering Graduate Fellowship', organization: 'Arizona State University' },
     { year: 2026, title: 'Research Advancement Award', organization: 'Arizona State University' },
     { year: 2026, title: 'Graduate Student Government (GSG) Travel Grant', organization: 'Arizona State University' },
     { year: 2026, title: 'Fulton Schools Experiential Learning Grant', organization: 'Arizona State University' },
